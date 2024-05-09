@@ -18,7 +18,14 @@ public class Desafio
             //Atribiu a aliquota de 5% mediante o salário:
             valorImposto = 0.05F * valorSalario;
         }
-
+        else if (valorSalario > 1100 && valorSalario <= 2500)
+        {
+            valorImposto = 0.1F * valorSalario;
+        }
+        else
+        {
+            valorImposto = 0.15F * valorSalario;
+        }
 
         //Calcula e imprime a Saída (com 2 casas decimais):
         float saida = valorSalario - valorImposto + valorBeneficios;
